@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.darre.test.MainActivity"
+    android:orientation="vertical">
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#013e70">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Upcoming, Thursday February 2nd  "
+            android:textColor="#ffff"/>
+
+        <TextView
+            android:id="@+id/football"
+            android:layout_below="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:text=" Football :"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="10:30 AM"
+            android:textColor="#ffffff" />
+
+
+        <TextView
+            android:id="@+id/cricket"
+            android:layout_below="@+id/football"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:text=" Cricket :"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/football"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="6:15 PM"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff">
+
+        <TextView
+            android:id="@+id/calisthenics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="Calisthenics"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/mma"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calisthenics"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="Mixed Martial Arts"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/cricket_list"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_below="@+id/mma"
+            android:text="Cricket"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/basketball"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_below="@+id/cricket_list"
+            android:text="Basketball"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/star_on"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/star_on"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/calisthenics"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/star_on"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mma"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/star_on"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cricket_list"
+            android:padding="10dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
